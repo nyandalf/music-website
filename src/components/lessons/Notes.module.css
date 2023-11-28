@@ -1,0 +1,25 @@
+.notes {
+  margin: 4rem;
+  background-color: var(--color-dark--1);
+}
+
+.notes h1 {
+  font-size: 3rem;
+}
+
+.notes ul {
+  padding-left: 2rem;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+}
+
+.notes img {
+  width: 400px;
+}
+
+.notes li {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.container li {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-light--3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.25rem;
+}
+
+.container li:first-child {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.container li:last-child {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.container .correct {
+  background-color: var(--color-green--1); /* Active step color */
+}
+.container .wrong {
+  background-color: var(--color-red--1); /* Active step color */
+}

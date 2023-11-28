@@ -1,0 +1,451 @@
+{
+  "questions": [
+    {
+      "id": 1001,
+      "questionPool": ["C", "D", "E", "c", "d", "e"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes C, D, E.",
+      "type": "",
+      "clef": "treble"
+    },
+    {
+      "id": 1002,
+      "questionPool": ["E", "F", "G", "e", "f", "g"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes E, F, G.",
+      "type": "",
+      "clef": "treble"
+    },
+    {
+      "id": 1003,
+      "questionPool": ["G", "A", "B", "C", "g", "a", "b", "c"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes E, F, G.",
+      "type": "",
+      "clef": "treble"
+    },
+    {
+      "id": 1004,
+      "questionPool": ["C", "D", "E", "F", "G", "c", "d", "e", "f", "g"],
+      "questionCount": 15,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes from C to G.",
+      "type": "",
+      "clef": "treble"
+    },
+    {
+      "id": 1005,
+      "questionPool": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "a",
+        "b"
+      ],
+      "questionCount": 20,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes from C to B.",
+      "type": "",
+      "clef": "treble"
+    },
+    {
+      "id": 1006,
+      "questionPool": ["C", "D", "F", "G", "A", "c", "d", "f", "g", "a"],
+      "questionCount": 15,
+      "options": ["^C", "^D", "^E", "^F", "^G", "^A", "^B"],
+      "description": "Identifying the notes with sharps.",
+      "type": "accidentals_sharp",
+      "clef": "treble"
+    },
+    {
+      "id": 1007,
+      "questionPool": ["D", "E", "G", "A", "B", "d", "e", "g", "a", "b"],
+      "questionCount": 15,
+      "options": ["_C", "_D", "_E", "_F", "_G", "_A", "_B"],
+      "description": "Identifying the notes with flats.",
+      "type": "accidentals_flat",
+      "clef": "treble"
+    },
+    {
+      "id": 1008,
+      "questionPool": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "a",
+        "b"
+      ],
+      "questionCount": 20,
+      "options": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "^C",
+        "^D",
+        "^E",
+        "^F",
+        "^G",
+        "^A",
+        "^B",
+        "_C",
+        "_D",
+        "_E",
+        "_F",
+        "_G",
+        "_A",
+        "_B"
+      ],
+      "description": "Identifying all notes on the Treble Clef.",
+      "type": "all_notes",
+      "clef": "treble"
+    },
+    {
+      "id": 1009,
+      "questionPool": ["C,,", "D,,", "E,,", "C,", "D,", "E,"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes C, D, E.",
+      "type": "",
+      "clef": "bass"
+    },
+    {
+      "id": 1010,
+      "questionPool": ["E", "F", "G", "e", "f", "g"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes E, F, G.",
+      "type": "",
+      "clef": "bass"
+    },
+    {
+      "id": 1011,
+      "questionPool": ["G", "A", "B", "C", "g", "a", "b", "c"],
+      "questionCount": 10,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes E, F, G.",
+      "type": "",
+      "clef": "bass"
+    },
+    {
+      "id": 1012,
+      "questionPool": [
+        "C,,",
+        "D,,",
+        "E,,",
+        "F,,",
+        "G,,",
+        "C,",
+        "D,",
+        "E,",
+        "F,",
+        "G,"
+      ],
+      "questionCount": 15,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes from C to G.",
+      "type": "",
+      "clef": "bass"
+    },
+    {
+      "id": 1013,
+      "questionPool": [
+        "C,,",
+        "D,,",
+        "E,,",
+        "F,,",
+        "G,,",
+        "A,,",
+        "B,,",
+        "C,",
+        "D,",
+        "E,",
+        "F,",
+        "G,",
+        "A,",
+        "B,"
+      ],
+      "questionCount": 20,
+      "options": ["C", "D", "E", "F", "G", "A", "B"],
+      "description": "Identifying the notes from C to B.",
+      "type": "",
+      "clef": "bass"
+    },
+    {
+      "id": 1014,
+      "questionPool": [
+        "C,,",
+        "D,,",
+        "F,,",
+        "G,,",
+        "A,,",
+        "C,",
+        "D,",
+        "F,",
+        "G,",
+        "A,"
+      ],
+      "questionCount": 15,
+      "options": ["^C", "^D", "^E", "^F", "^G", "^A", "^B"],
+      "description": "Identifying the notes with sharps.",
+      "type": "accidentals_sharp",
+      "clef": "bass"
+    },
+    {
+      "id": 1015,
+      "questionPool": [
+        "D,,",
+        "E,,",
+        "G,,",
+        "A,,",
+        "B,,",
+        "D,",
+        "E,",
+        "G,",
+        "A,",
+        "B,"
+      ],
+      "questionCount": 15,
+      "options": ["_C", "_D", "_E", "_F", "_G", "_A", "_B"],
+      "description": "Identifying the notes with flats.",
+      "type": "accidentals_flat",
+      "clef": "bass"
+    },
+    {
+      "id": 1016,
+      "questionPool": [
+        "C,,",
+        "D,,",
+        "E,,",
+        "F,,",
+        "G,,",
+        "A,,",
+        "B,,",
+        "C,",
+        "D,",
+        "E,",
+        "F,",
+        "G,",
+        "A,",
+        "B,"
+      ],
+      "questionCount": 20,
+      "options": [
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "A",
+        "B",
+        "^C",
+        "^D",
+        "^E",
+        "^F",
+        "^G",
+        "^A",
+        "^B",
+        "_C",
+        "_D",
+        "_E",
+        "_F",
+        "_G",
+        "_A",
+        "_B"
+      ],
+      "description": "Identifying all notes on the Bass Clef.",
+      "type": "all_notes",
+      "clef": "bass"
+    },
+    {
+      "id": 2001,
+      "questionPool": ["1", "2", "3", "4", "5"],
+      "questionCount": 10,
+      "options": ["1", "2", "3", "4", "5"],
+      "description": "Identifying intervals from unison to fifth",
+      "type": "interval",
+      "clef": "treble"
+    },
+    {
+      "id": 2002,
+      "questionPool": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "questionCount": 15,
+      "options": ["1", "2", "3", "4", "5", "6", "7", "8"],
+      "description": "Identifying intervals from unison to octave",
+      "type": "interval",
+      "clef": "treble"
+    },
+    {
+      "id": 2003,
+      "questionPool": [
+        { "notes": ["C", "F"], "answer": "P4" },
+        { "notes": ["^C", "^F"], "answer": "P4" },
+        { "notes": ["_D", "_G"], "answer": "P4" },
+        { "notes": ["D", "G"], "answer": "P4" },
+        { "notes": ["^D", "^G"], "answer": "P4" },
+        { "notes": ["_E", "_A"], "answer": "P4" },
+        { "notes": ["E", "A"], "answer": "P4" },
+
+        { "notes": ["C", "G"], "answer": "P5" },
+        { "notes": ["^C", "^G"], "answer": "P5" },
+        { "notes": ["_D", "_A"], "answer": "P5" },
+        { "notes": ["D", "A"], "answer": "P5" },
+        { "notes": ["^D", "^A"], "answer": "P5" },
+        { "notes": ["_E", "_B"], "answer": "P5" },
+        { "notes": ["E", "B"], "answer": "P5" }
+      ],
+      "questionCount": 15,
+      "options": ["P4", "P5"],
+      "description": "Identifying perfect fourth and fifths",
+      "type": "intervalQuality",
+      "clef": "treble"
+    },
+    {
+      "id": 3001,
+      "questionPool": [
+        { "notes": ["C"], "answer": "MAJ" },
+        { "notes": ["^C", "^E", "^G"], "answer": "MAJ" },
+        { "notes": ["_D", "F", "_A"], "answer": "MAJ" },
+        { "notes": ["D", "^F", "A"], "answer": "MAJ" },
+        { "notes": ["^D", "^^F", "^A"], "answer": "MAJ" },
+        { "notes": ["_E", "G", "_B"], "answer": "MAJ" },
+        { "notes": ["E", "^G", "B"], "answer": "MAJ" },
+        { "notes": ["F", "A", "c"], "answer": "MAJ" },
+        { "notes": ["^F", "^A", "^c"], "answer": "MAJ" },
+        { "notes": ["_G", "_B", "_d"], "answer": "MAJ" },
+        { "notes": ["G", "B", "d"], "answer": "MAJ" },
+
+        { "notes": ["C", "_E", "G"], "answer": "MIN" },
+        { "notes": ["^C", "E", "^G"], "answer": "MIN" },
+        { "notes": ["_D", "_F", "_A"], "answer": "MIN" },
+        { "notes": ["D", "F", "A"], "answer": "MIN" },
+        { "notes": ["_D", "^F", "^A"], "answer": "MIN" },
+        { "notes": ["_E", "_G", "_B"], "answer": "MIN" },
+        { "notes": ["E", "G", "B"], "answer": "MIN" },
+        { "notes": ["F", "_A", "c"], "answer": "MIN" },
+        { "notes": ["^F", "A", "^c"], "answer": "MIN" },
+        { "notes": ["_G", "__B", "_d"], "answer": "MIN" },
+        { "notes": ["G", "_B", "d"], "answer": "MIN" }
+      ],
+      "questionCount": 20,
+      "options": ["MAJ", "MIN"],
+      "description": "Identifying major and minor chords.",
+      "type": "chordQuality",
+      "clef": "treble"
+    },
+    {
+      "id": 4001,
+      "questionPool": [
+        { "notes": ["C"], "answer": "MAJ" },
+        { "notes": ["G"], "answer": "MAJ" },
+        { "notes": ["D"], "answer": "MAJ" },
+        { "notes": ["A"], "answer": "MAJ" },
+        { "notes": ["A"], "answer": "MIN" },
+        { "notes": ["E"], "answer": "MIN" },
+        { "notes": ["B"], "answer": "MIN" },
+        { "notes": ["^F"], "answer": "MIN" }
+      ],
+      "questionCount": 10,
+      "options": ["MAJ", "MIN"],
+      "description": "Identifying major and minor scales with up to 3 sharps.",
+      "type": "scale",
+      "clef": "treble"
+    },
+    {
+      "id": 5001,
+      "questionPool": [
+        { "key": "major", "answer": "C" },
+        { "key": "major", "answer": "G" },
+        { "key": "major", "answer": "D" },
+        { "key": "major", "answer": "A" },
+        { "key": "minor", "answer": "AM" },
+        { "key": "minor", "answer": "EM" },
+        { "key": "minor", "answer": "BM" },
+        { "key": "minor", "answer": "F#M" }
+      ],
+      "questionCount": 10,
+      "options": ["C", "G", "D", "A", "AM", "EM", "BM", "F#M"],
+      "description": "Identifying major and minor keys with up to 3 sharps.",
+      "type": "key",
+      "clef": "treble"
+    },
+    {
+      "id": 5002,
+      "questionPool": [
+        { "key": "major", "answer": "E" },
+        { "key": "major", "answer": "B" },
+        { "key": "major", "answer": "F#" },
+        { "key": "major", "answer": "C#" },
+        { "key": "minor", "answer": "C#M" },
+        { "key": "minor", "answer": "G#M" },
+        { "key": "minor", "answer": "D#M" },
+        { "key": "minor", "answer": "A#M" }
+      ],
+      "questionCount": 10,
+      "options": ["E", "B", "F#", "C#", "C#M", "G#M", "D#M", "A#M"],
+      "description": "Identifying major and minor keys with more than 3 sharps.",
+      "type": "key",
+      "clef": "treble"
+    },
+    {
+      "id": 5003,
+      "questionPool": [
+        { "key": "major", "answer": "C" },
+        { "key": "major", "answer": "F" },
+        { "key": "major", "answer": "Bb" },
+        { "key": "major", "answer": "Eb" },
+        { "key": "minor", "answer": "AM" },
+        { "key": "minor", "answer": "DM" },
+        { "key": "minor", "answer": "GM" },
+        { "key": "minor", "answer": "CM" }
+      ],
+      "questionCount": 10,
+      "options": ["C", "F", "Bb", "Eb", "AM", "DM", "GM", "CM"],
+      "description": "Identifying major and minor keys with up to 3 flats.",
+      "type": "key",
+      "clef": "treble"
+    },
+    {
+      "id": 5004,
+      "questionPool": [
+        { "key": "major", "answer": "Ab" },
+        { "key": "major", "answer": "Db" },
+        { "key": "major", "answer": "Gb" },
+        { "key": "major", "answer": "Cb" },
+        { "key": "minor", "answer": "FM" },
+        { "key": "minor", "answer": "BbM" },
+        { "key": "minor", "answer": "EbM" },
+        { "key": "minor", "answer": "AbM" }
+      ],
+      "questionCount": 10,
+      "options": ["Ab", "Db", "Gb", "Cb", "FM", "BbM", "EbM", "AbM"],
+      "description": "Identifying major and minor keys with more than 3 flats.",
+      "type": "key",
+      "clef": "treble"
+    }
+  ]
+}

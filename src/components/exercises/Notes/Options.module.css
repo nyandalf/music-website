@@ -1,0 +1,51 @@
+.containerGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns with equal width */
+  grid-template-rows: repeat(3, 50px); /* 3 rows with a fixed height */
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.containerRow {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  border: 2px solid var(--color-light--3);
+  background-color: var(--color-dark--0);
+  padding: 1rem;
+  width: 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.chord {
+  width: 10rem;
+}
+
+.key {
+  width: 8rem;
+}
+
+.btn.correct {
+  border: 2px solid #5aff5a;
+}
+
+.btn.wrong {
+  border: 2px solid #ff5a5a;
+}

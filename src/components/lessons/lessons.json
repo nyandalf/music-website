@@ -1,0 +1,44 @@
+{
+  "lessons": [
+    {
+      "name": "Notes",
+      "description": "Learn about notes and their positions on the piano.",
+      "image": ""
+    },
+    {
+      "name": "The Staff",
+      "description": "Learn about the staff and note positions on the staff.",
+      "image": ""
+    },
+    {
+      "name": "Clefs",
+      "description": "Learn about the four common clefs used in music notation.",
+      "image": ""
+    },
+    {
+      "name": "Accidentals",
+      "description": "Learn about the five different types of accidentals.",
+      "image": ""
+    },
+    {
+      "name": "Intervals",
+      "description": "Learn about the different types of intervals.",
+      "image": ""
+    },
+    {
+      "name": "Chords",
+      "description": "Learn about the different types of chords.",
+      "image": ""
+    },
+    {
+      "name": "Scales",
+      "description": "Learn about the different types of scales.",
+      "image": ""
+    },
+    {
+      "name": "Keys",
+      "description": "Learn about the different types of keys and key signatures.",
+      "image": ""
+    }
+  ]
+}

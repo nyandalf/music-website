@@ -1,0 +1,34 @@
+{
+  "exercises": [
+    {
+      "name": "Notes",
+      "description": "Improve your ability to read, write, and play notes.",
+      "image": ""
+    },
+    {
+      "name": "Rhythm",
+      "description": "Improve your ability to read, write, and play rhythms.",
+      "image": ""
+    },
+    {
+      "name": "Intervals",
+      "description": "Improve your ability to identify, write, and play intervals.",
+      "image": ""
+    },
+    {
+      "name": "Chords",
+      "description": "Improve your ability to identify, write, and play chords.",
+      "image": ""
+    },
+    {
+      "name": "Scales",
+      "description": "Improve your ability to identify, write, and play scales.",
+      "image": ""
+    },
+    {
+      "name": "Key signatures",
+      "description": "Improve your ability to identify and write key signatures.",
+      "image": ""
+    }
+  ]
+}

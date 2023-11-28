@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark--1);
+  height: 100vh;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 5rem;
+}
+
+.container p {
+  font-size: 2rem;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+}

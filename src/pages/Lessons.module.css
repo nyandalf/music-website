@@ -1,0 +1,17 @@
+.lessons {
+  background-color: var(--color-dark--1);
+  min-height: 100vh;
+}
+
+.lessons section {
+  display: flex;
+  margin: 4rem auto;
+  width: 80%;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.lessons p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
