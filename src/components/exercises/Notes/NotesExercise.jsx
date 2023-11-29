@@ -8,6 +8,7 @@ import FinishedScreen from "./FinishedScreen";
 import Timer from "./Timer";
 import { useParams } from "react-router-dom";
 import ProgressBar from "./ProgressBar";
+import axios from "axios";
 
 const initialState = {
   questions: [],
@@ -169,15 +170,25 @@ function NotesExercise() {
   const maxPossiblePoints = questions?.questionCount;
 
   useEffect(() => {
+    // async function fetchQuestions() {
+    //   try {
+    //     const response = await fetch(`http://localhost:9000/questions/${id}`);
+    //     const data = await response.json();
+    //     dispatch({ type: "dataReceived", payload: data });
+    //   } catch (err) {
+    //     console.log(err.message);
+    //     dispatch({ type: "dataFailed" });
+    //   }
+    // }
     async function fetchQuestions() {
       try {
-        const response = await fetch(`http://localhost:9000/questions/${id}`);
-        const data = await response.json();
-        dispatch({ type: "dataReceived", payload: data });
+        const response = await axios.get("http://localhost:3001/questions");
+        const data = await response.data[0].questions;
+        const dataById = await data.find((item) => item.id === Number(id));
+        dispatch({ type: "dataReceived", payload: dataById });
       } catch (err) {
         console.log(err.message);
         dispatch({ type: "dataFailed" });
-      } finally {
       }
     }
     fetchQuestions();

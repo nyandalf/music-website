@@ -38,7 +38,7 @@ export default function Login() {
           "finishedQuizzes",
           JSON.stringify(res.data.finishedQuizzes)
         );
-        navigate("/");
+        navigate(-1);
       }
     } catch (error) {
       console.log(error);

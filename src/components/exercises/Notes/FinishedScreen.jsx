@@ -1,5 +1,8 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useCookies } from "react-cookie";
 import styles from "./FinishedScreen.module.css";
+import axios from "axios";
 
 function FinishedScreen({
   dispatch,
@@ -11,15 +14,39 @@ function FinishedScreen({
 }) {
   const percentage = (points / maxPossiblePoints) * 100;
   const navigate = useNavigate();
-  // const minutes = Math.floor(secondsCount / 60);
-  // const seconds = secondsCount % 60;
-
+  const [cookies, _] = useCookies(["access_token"]);
+  const userId = localStorage.getItem("userID");
+  const { id } = useParams();
   let emoji;
   if (percentage === 100) emoji = "🥇";
   if (percentage >= 80 && percentage < 100) emoji = "🥈";
   if (percentage >= 60 && percentage < 80) emoji = "🥉";
   if (percentage < 60) emoji = "💩";
   if (percentage === 0) emoji = "💀";
+
+  useEffect(() => {
+    async function updateUserProgress() {
+      try {
+        const response = await axios.post(
+          `http://localhost:3001/questions/${userId}`,
+          {
+            quizId: id,
+            timeTaken: secondsCount,
+            correctAnswers: points,
+          }
+        );
+        console.log(response.data.user.finishedQuizzes);
+        window.localStorage.setItem(
+          "finishedQuizzes",
+          JSON.stringify(response.data.user.finishedQuizzes)
+        );
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    updateUserProgress();
+  }, []);
+
   return (
     <div className={styles.container}>
       <p className={styles.results}>

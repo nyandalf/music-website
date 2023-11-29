@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function LessonCard({ lesson }) {
   console.log(lesson);
   return (
-    <Link to="notes" className={styles.card}>
+    <Link to={lesson.route} className={styles.card}>
       <div className={styles.cardImage}>
         <img
           src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"

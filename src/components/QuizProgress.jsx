@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import styles from "./QuizProgress.module.css";
+import TextWobble from "./TextWobble";
+import TextWave from "./TextWave";
 
 function filterUniqueAndCondition(array, property, condition1, condition2) {
   return array
@@ -39,7 +41,10 @@ function QuizProgress({ idRange, totalQuestions }) {
           Progress: {finishedQuestions.length}/{totalQuestions}
         </p>
       ) : (
-        <p>You can login to track your progress</p>
+        <p className={styles.progress}>
+          <TextWobble text="You can login to track your progress" />
+          <TextWave text="You can login to track your progress" />
+        </p>
       )}
     </div>
   );

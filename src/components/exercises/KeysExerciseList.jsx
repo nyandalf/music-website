@@ -2,7 +2,11 @@ import styles from "./NotesExerciseList.module.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
 import Spinner from "../Spinner";
+import QuizProgress from "../QuizProgress";
+import QuizRecord from "../QuizRecord";
+import axios from "axios";
 
 function KeysExerciseList() {
   const [questions, setQuestions] = useState([]);
@@ -10,22 +14,23 @@ function KeysExerciseList() {
 
   useEffect(() => {
     async function fetchQuestions() {
-      setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:9000/questions`);
-        const data = await response.json();
-        setQuestions(data.filter((question) => question.id > 5000));
+        const response = await axios.get("http://localhost:3001/questions");
+        const data = await response.data[0].questions;
+        setQuestions(
+          data.filter((question) => question.id > 5000 && question.id < 6000)
+        );
         setIsLoading(false);
       } catch (err) {
-        console.log(err.message);
-      } finally {
+        console.log(err);
       }
     }
     fetchQuestions();
   }, []);
   return (
     <div className={styles.container}>
-      <p></p>
+      <p>Keys</p>
+      <QuizProgress idRange={[5000, 6000]} totalQuestions={questions.length} />
       <div className={styles.section}>
         {isLoading ? (
           <Spinner />
@@ -34,6 +39,7 @@ function KeysExerciseList() {
             {questions.map((question) => (
               <li>
                 <p>{question.description}</p>
+                <QuizRecord quizId={question.id} />
                 <Link to={`${question.id}`} k>
                   <button>Go to exercise</button>
                 </Link>

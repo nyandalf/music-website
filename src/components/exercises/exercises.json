@@ -3,32 +3,38 @@
     {
       "name": "Notes",
       "description": "Improve your ability to read, write, and play notes.",
-      "image": ""
+      "image": "",
+      "route": "notes"
     },
     {
       "name": "Rhythm",
       "description": "Improve your ability to read, write, and play rhythms.",
-      "image": ""
+      "image": "",
+      "route": "rhythm"
     },
     {
       "name": "Intervals",
       "description": "Improve your ability to identify, write, and play intervals.",
-      "image": ""
+      "image": "",
+      "route": "intervals"
     },
     {
       "name": "Chords",
       "description": "Improve your ability to identify, write, and play chords.",
-      "image": ""
+      "image": "",
+      "route": "chord"
     },
     {
       "name": "Scales",
       "description": "Improve your ability to identify, write, and play scales.",
-      "image": ""
+      "image": "",
+      "route": "scales"
     },
     {
       "name": "Key signatures",
       "description": "Improve your ability to identify and write key signatures.",
-      "image": ""
+      "image": "",
+      "route": "keys"
     }
   ]
 }

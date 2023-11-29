@@ -6,6 +6,7 @@ import { useCookies } from "react-cookie";
 import Spinner from "../Spinner";
 import QuizProgress from "../QuizProgress";
 import QuizRecord from "../QuizRecord";
+import axios from "axios";
 
 function NotesExerciseList() {
   const [questions, setQuestions] = useState([]);
@@ -17,16 +18,26 @@ function NotesExerciseList() {
     (question) => question.clef === "bass"
   );
   useEffect(() => {
+    // Fetching from fake backend
+    // async function fetchQuestions() {
+    //   setIsLoading(true);
+    //   try {
+    //     const response = await fetch(`http://localhost:9000/questions`);
+    //     const data = await response.json();
+    //     setQuestions(data.filter((question) => question.id < 2000));
+    //     setIsLoading(false);
+    //   } catch (err) {
+    //     console.log(err.message);
+    //   }
+    // }
     async function fetchQuestions() {
-      setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:9000/questions`);
-        const data = await response.json();
+        const response = await axios.get("http://localhost:3001/questions");
+        const data = await response.data[0].questions;
         setQuestions(data.filter((question) => question.id < 2000));
         setIsLoading(false);
       } catch (err) {
-        console.log(err.message);
-      } finally {
+        console.log(err);
       }
     }
     fetchQuestions();

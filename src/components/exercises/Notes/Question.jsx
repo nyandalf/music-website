@@ -149,7 +149,6 @@ function Question({
 }) {
   let notation;
   let rootNote;
-  let middleNote;
   let upperNote;
   let scale;
   let chord;
@@ -164,10 +163,6 @@ function Question({
   } else if (type === "chordQuality") {
     chord = chordGenerator(shuffledQuestions[index]);
     notation = `X:1\nM:4/4 \nK:C \n [${chord[0]}8${chord[1]}8${chord[2]}8]|`;
-    // rootNote = shuffledQuestions[index].notes[0];
-    // middleNote = shuffledQuestions[index].notes[1];
-    // upperNote = shuffledQuestions[index].notes[2];
-    // notation = `X:1\nM:4/4 \nK:C \n [${rootNote}8${middleNote}8${upperNote}8]|`;
   } else if (type === "scale") {
     scale = scaleGenerator(shuffledQuestions[index]);
     notation = `X:1\nM:4/4 \nK:C \n L:1/8 \n ${scale[0]}${scale[1]}${scale[2]}${scale[3]}${scale[4]}${scale[5]}${scale[6]}${scale[7]}|`;

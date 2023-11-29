@@ -2,8 +2,11 @@ import styles from "./NotesExerciseList.module.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useCookies } from "react-cookie";
 import Spinner from "../Spinner";
 import QuizProgress from "../QuizProgress";
+import QuizRecord from "../QuizRecord";
+import axios from "axios";
 
 function ScalesExerciseList() {
   const [questions, setQuestions] = useState([]);
@@ -11,17 +14,15 @@ function ScalesExerciseList() {
 
   useEffect(() => {
     async function fetchQuestions() {
-      setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:9000/questions`);
-        const data = await response.json();
+        const response = await axios.get("http://localhost:3001/questions");
+        const data = await response.data[0].questions;
         setQuestions(
           data.filter((question) => question.id > 4000 && question.id < 5000)
         );
         setIsLoading(false);
       } catch (err) {
-        console.log(err.message);
-      } finally {
+        console.log(err);
       }
     }
     fetchQuestions();
@@ -37,6 +38,7 @@ function ScalesExerciseList() {
             {questions.map((question) => (
               <li>
                 <p>{question.description}</p>
+                <QuizRecord quizId={question.id} />
                 <Link to={`${question.id}`} k>
                   <button>Go to exercise</button>
                 </Link>

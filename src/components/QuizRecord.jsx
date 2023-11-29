@@ -18,7 +18,6 @@ function QuizRecord({ quizId }) {
     // If the current attempt doesn't meet the criteria, keep the current best attempt
     return best;
   }, null);
-
   useEffect(() => {
     function getItemFromLocalStorage() {
       const storedValue = localStorage.getItem("finishedQuizzes");
@@ -30,7 +29,27 @@ function QuizRecord({ quizId }) {
     getItemFromLocalStorage();
   }, []);
 
-  return <div></div>;
+  return (
+    <>
+      {cookies.access_token ? (
+        <div className={styles.container}>
+          {bestAttempt ? (
+            <>
+              <p>Best Record</p>
+              <div className={styles.recordContainer}>
+                <p>Correct: {bestAttempt.correctAnswers}</p>
+                <p>Time: {bestAttempt.timeTaken}s</p>
+              </div>
+            </>
+          ) : (
+            <p className={styles.notAttempted}>Not attempted</p>
+          )}
+        </div>
+      ) : (
+        ""
+      )}
+    </>
+  );
 }
 
 export default QuizRecord;

@@ -1,0 +1,25 @@
+.container {
+  width: 182px;
+  text-align: center;
+}
+
+.container > p {
+  margin-bottom: 0;
+}
+
+.recordContainer {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.recordContainer > p {
+  flex: 0 50%;
+  margin-bottom: 0.5rem;
+}
+
+.notAttempted {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
